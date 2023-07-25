@@ -43,8 +43,8 @@ public class MemberDAOImpl implements MemberDAO {
 	}
 
 	@Override
-	public List<MemberVO> searchMemberName(String id) throws DataAccessException {
-		List<MemberVO> memList = sqlSession.selectList("mapper.member.searchMemberName", id);
+	public List searchMemberName(String id) throws DataAccessException {
+		List memList = sqlSession.selectList("mapper.member.searchMemberName", id);
 		return memList;
 	}
 

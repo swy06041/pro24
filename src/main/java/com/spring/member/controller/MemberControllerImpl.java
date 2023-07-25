@@ -84,6 +84,7 @@ public class MemberControllerImpl extends MultiActionController implements Membe
 	public ModelAndView searchMember(HttpServletRequest request, HttpServletResponse response) throws Exception {
 		request.setCharacterEncoding("utf-8");
 		String action = request.getParameter("action");
+		System.out.println(action);
 		ModelAndView mav = new ModelAndView();
 
 		mav.setViewName("listMembers");
